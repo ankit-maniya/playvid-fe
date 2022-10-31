@@ -146,9 +146,9 @@ const Bandcamp = () => {
                     href={videoData.url}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="text-white  m-1 bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-slate-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-slate-800 items-center"
+                    className="flex flex-wrap content-between text-white  m-1 bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-slate-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-slate-800 items-center"
                   >
-                    <div>
+                    <div className="w-full">
                       <span className="font-bold break-all">
                         {videoData.bitrate
                           ? (videoData.bitrate / 1000).toFixed(2)
@@ -165,7 +165,15 @@ const Bandcamp = () => {
                       <p className="break-all">
                         Duration: {(videoData.duration / 60).toFixed(2)}
                       </p>
-                      <p className="break-all">{videoData.track}</p>
+                      <p className="break-words text-lg font-bold">
+                        {videoData.track}
+                      </p>
+                    </div>
+                    <div
+                      className="w-full bg-white rounded-lg p-2 mt-1.5 font-bold text-lg text-indigo-800 shadow-lg
+                          "
+                    >
+                      DOWNLOAD📥
                     </div>
                   </a>
                 </Link>
@@ -178,9 +186,9 @@ const Bandcamp = () => {
                           href={video.url}
                           rel="noopener noreferrer"
                           target="_blank"
-                          className="text-white  m-1 bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-slate-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-slate-800 items-center"
+                          className="flex flex-wrap content-between text-white m-1 bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-slate-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-slate-800 items-center"
                         >
-                          <div>
+                          <div className="w-full">
                             <span className="font-bold break-all">
                               {video.bitrate
                                 ? (video.bitrate / 1000).toFixed(2)
@@ -197,7 +205,15 @@ const Bandcamp = () => {
                             <p className="break-all">
                               Duration: {(video.duration / 60).toFixed(2)}
                             </p>
-                            <p className="break-all">{video.track}</p>
+                            <p className="break-words text-lg font-bold">
+                              “{video.track}”
+                            </p>
+                          </div>
+                          <div
+                            className="bg-white w-full rounded-lg p-2 mt-1.5 font-bold text-lg text-indigo-800 shadow-lg
+                          "
+                          >
+                            DOWNLOAD📥
                           </div>
                         </a>
                       </Link>

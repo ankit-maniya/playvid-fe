@@ -24,4 +24,12 @@ export default class VideoService {
 
     return res.data;
   }
+
+  static async get_moj(formData) {
+    const res = await gAxios.post("api/music/moj/", formData);
+
+    console.log("Api ", res);
+
+    return res.data;
+  }
 }

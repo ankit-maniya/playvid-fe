@@ -16,7 +16,7 @@ export default function Index() {
   }, [loading]);
 
   return (
-    <>
+    <div>
       {loading && <Loader />}
       <ScrollToTop />
 
@@ -37,6 +37,6 @@ export default function Index() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

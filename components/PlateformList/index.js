@@ -21,6 +21,16 @@ const Plateforms = () => {
 
   const hasFavoriteItems = disFavouriteList.length > 0;
 
+  const getImageUrl = (visitId, imgext) => {
+    let imageUrl = dummyImg;
+
+    if (!visitId) {
+      return imageUrl;
+    }
+
+    return "/plateforms/" + visitId + imgext;
+  };
+
   return (
     <>
       {hasFavoriteItems && (
@@ -33,11 +43,14 @@ const Plateforms = () => {
       <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-2">
         {hasFavoriteItems
           ? disFavouriteList.map((plateform, idx) => {
+              const visitId = plateform.visitId;
+              const imageUrl = getImageUrl(visitId, plateform.imgext);
+
               return (
                 <Link
                   className="pointer-events-none"
                   key={idx}
-                  href={plateform.visitId}
+                  href={visitId}
                   legacyBehavior
                 >
                   <a className="text-slate-900 bg-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-slate-300 rounded-lg px-5 py-2.5 text-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-slate-800 items-center">
@@ -48,11 +61,7 @@ const Plateforms = () => {
                         width={1280}
                         height={1920}
                         title={`${plateform.alt}`}
-                        src={`${
-                          plateform.visitId
-                            ? "/plateforms/" + plateform.visitId + ".svg"
-                            : dummyImg
-                        }`}
+                        src={imageUrl}
                         alt={`${plateform.alt}`}
                         loading="lazy"
                       />
@@ -90,6 +99,9 @@ const Plateforms = () => {
       <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-2">
         {sortedPlatformLists.length > 0
           ? sortedPlatformLists.map((plateform, idx) => {
+              const visitId = plateform.visitId;
+              const imageUrl = getImageUrl(visitId, plateform.imgext);
+
               if (!plateform.isActive) {
                 return (
                   <div
@@ -105,15 +117,11 @@ const Plateforms = () => {
                     <span className="font-medium flex justify-center align-middle">
                       <Image
                         layout={"responsive"}
-                        quality={50}
+                        quality={80}
                         width={1280}
                         height={1920}
                         title={`${plateform.alt}`}
-                        src={`${
-                          plateform.visitId
-                            ? "/plateforms/" + plateform.visitId + ".svg"
-                            : dummyImg
-                        }`}
+                        src={imageUrl}
                         alt={`${plateform.alt}`}
                         loading="lazy"
                       />
@@ -126,14 +134,11 @@ const Plateforms = () => {
               }
 
               return (
-                <Link key={idx} href={plateform.visitId} legacyBehavior>
+                <Link key={idx} href={visitId} legacyBehavior>
                   <a
                     onClick={() => {
-                      if (!state.includes(plateform.visitId)) {
-                        localStorage.setItem("favouriteList", [
-                          state,
-                          plateform.visitId,
-                        ]);
+                      if (!state.includes(visitId)) {
+                        localStorage.setItem("favouriteList", [state, visitId]);
                       }
                     }}
                     className="text-slate-900 bg-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-slate-300 rounded-lg px-5 py-2.5 text-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-slate-800 items-center"
@@ -141,15 +146,11 @@ const Plateforms = () => {
                     <span className="font-medium flex justify-center align-middle">
                       <Image
                         layout={"responsive"}
-                        quality={50}
+                        quality={80}
                         width={1280}
                         height={1920}
                         title={`${plateform.alt}`}
-                        src={`${
-                          plateform.visitId
-                            ? "/plateforms/" + plateform.visitId + ".svg"
-                            : dummyImg
-                        }`}
+                        src={imageUrl}
                         alt={`${plateform.alt}`}
                         loading="lazy"
                       />

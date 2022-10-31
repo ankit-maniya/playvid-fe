@@ -2954,314 +2954,284 @@ export const bandCamp_data = {
 
 export const platformLists = [
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/9gag.svg",
     title: "9GAG",
     alt: "9GAG video downloader",
     visitId: "9gag",
+    imgext: ".svg",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/akillitv.svg",
     title: "Akıllı TV",
     alt: "Akıllı TV video downloader",
     visitId: "akıllıtv",
+    imgext: ".svg",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/bandcamp.svg",
     title: "Bandcamp",
     alt: "Bandcamp video downloader",
     visitId: "bandcamp",
-    isActive: true
+    isActive: true,
+    imgext: ".svg",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/bilibili.svg",
+    imgext: ".svg",
     title: "Bilibili",
     alt: "Bilibili video downloader",
     visitId: "bilibili",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/bitchute.svg",
+    imgext: ".svg",
     title: "Bitchute",
     alt: "Bitchute video downloader",
     visitId: "bitchute",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/blogger.svg",
+    imgext: ".svg",
     title: "Blogger",
     alt: "Blogger video downloader",
     visitId: "blogger",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/blutv.svg",
+    imgext: ".svg",
     title: "BluTV",
     alt: "BluTV video downloader",
     visitId: "blutv",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/buzzfeed.svg",
+    imgext: ".svg",
     title: "Buzzfeed",
     alt: "Buzzfeed video downloader",
     visitId: "buzzfeed",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/dailymotion.svg",
+    imgext: ".png",
+    title: "Chingari",
+    visitId: "chingari",
+    alt: "Chingari video downloader",
+    isActive: true,
+  },
+  {
+    imgext: ".svg",
     title: "Dailymotion",
     alt: "Dailymotion video downloader",
     visitId: "dailymotion",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/douyin.svg",
+    imgext: ".svg",
     title: "Douyin",
     alt: "Douyin video downloader",
     visitId: "douyin",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/espn.svg",
+    imgext: ".svg",
     title: "ESPN",
     alt: "ESPN video downloader",
     visitId: "espn",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/facebook.svg",
+    imgext: ".svg",
     title: "Facebook",
     alt: "Facebook video downloader",
     visitId: "facebook",
-    isActive: true
+    isActive: true,
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/febspot.svg",
+    imgext: ".svg",
     title: "Febspot",
     alt: "Febspot video downloader",
     visitId: "febspot",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/flickr.svg",
+    imgext: ".svg",
     title: "Flickr",
     alt: "Flickr video downloader",
     visitId: "flickr",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/gaana.svg",
+    imgext: ".svg",
     title: "Gaana",
     alt: "Gaana video downloader",
     visitId: "gaana",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/ifunny.svg",
+    imgext: ".svg",
     title: "Ifunny",
     alt: "Ifunny video downloader",
     visitId: "ifunny",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/imdb.svg",
+    imgext: ".svg",
     title: "IMDB",
     alt: "IMDB video downloader",
     visitId: "imdb",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/imgur.svg",
+    imgext: ".svg",
     title: "Imgur",
     alt: "Imgur video downloader",
     visitId: "imgur",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/izlesene.svg",
+    imgext: ".svg",
     title: "Izlesene",
     alt: "Izlesene video downloader",
     visitId: "izlesene",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/kwai.svg",
+    imgext: ".svg",
     title: "Kwai",
     alt: "Kwai video downloader",
     visitId: "kwai",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/likee.svg",
+    imgext: ".svg",
     title: "Likee",
     alt: "Likee video downloader",
     visitId: "likee",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/linkedin.svg",
+    imgext: ".svg",
     title: "LinkedIn",
     alt: "LinkedIn video downloader",
     visitId: "linkedin",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/mashable.svg",
+    imgext: ".svg",
     title: "Mashable",
     alt: "Mashable video downloader",
     visitId: "mashable",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/mixcloud.svg",
+    imgext: ".svg",
     title: "Mixcloud",
     alt: "Mixcloud video downloader",
     visitId: "mixcloud",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/mxtakatak.svg",
+    imgext: ".png",
+    title: "Moj",
+    visitId: "moj",
+    alt: "Moj video downloader",
+    isActive: true,
+  },
+  {
+    imgext: ".svg",
     title: "MxTakatak",
     alt: "MxTakatak video downloader",
     visitId: "mxtakatak",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/odnoklassniki.svg",
+    imgext: ".svg",
     title: "Ok.ru",
     alt: "Ok.ru video downloader",
     visitId: "ok.ru",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/periscope.svg",
+    imgext: ".svg",
     title: "Periscope",
     alt: "Periscope video downloader",
     visitId: "periscope",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/pinterest.svg",
+    imgext: ".svg",
     title: "Pinterest",
     alt: "Pinterest video downloader",
     visitId: "pinterest",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/puhutv.svg",
+    imgext: ".svg",
     title: "PuhuTV",
     alt: "PuhuTV video downloader",
     visitId: "puhutv",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/reddit.svg",
+    imgext: ".svg",
     title: "Reddit",
     alt: "Reddit video downloader",
     visitId: "reddit",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/rumble.svg",
+    imgext: ".svg",
     title: "Rumble",
     alt: "Rumble video downloader",
     visitId: "rumble",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/sharechat.svg",
+    imgext: ".svg",
     title: "Share Chat",
     alt: "Share Chat video downloader",
     visitId: "sharechat",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/snapchat.svg",
+    imgext: ".svg",
     title: "Snapchat",
     alt: "Snapchat video downloader",
     visitId: "snapchat",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/soundcloud.svg",
+    imgext: ".svg",
     title: "Soundcloud",
     alt: "Soundcloud video downloader",
     visitId: "soundcloud",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/streamable.svg",
+    imgext: ".svg",
     title: "Streamable",
     alt: "Streamable video downloader",
     visitId: "streamable",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/ted.svg",
+    imgext: ".svg",
     title: "TED",
     alt: "TED video downloader",
     visitId: "ted",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/telegram.svg",
+    imgext: ".svg",
     title: "Telegram",
     alt: "Telegram video downloader",
     visitId: "telegram",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/tiktok.svg",
+    imgext: ".svg",
     title: "Tiktok",
     alt: "Tiktok video downloader",
     visitId: "tiktok",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/tumblr.svg",
+    imgext: ".svg",
     title: "Tumblr",
     alt: "Tumblr video downloader",
     visitId: "tumblr",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/twitch.svg",
+    imgext: ".svg",
     title: "Twitch",
     alt: "Twitch video downloader",
     visitId: "twitch",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/twitter.svg",
+    imgext: ".svg",
     title: "Twitter",
     alt: "Twitter video downloader",
     visitId: "twitter",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/vimeo.svg",
+    imgext: ".svg",
     title: "Vimeo",
     alt: "Vimeo video downloader",
     visitId: "vimeo",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/vkontakte.svg",
+    imgext: ".svg",
     title: "VK",
     alt: "VK video downloader",
     visitId: "vk",
   },
   {
-    image:
-      "https://aiovideodl.ml/wp-content/themes/aiodl-default/assets/sources/youtube.svg",
+    imgext: ".svg",
     title: "YouTube",
     alt: "YouTube video downloader",
     visitId: "youtube",
-    isActive: true
+    isActive: true,
   },
 ];
