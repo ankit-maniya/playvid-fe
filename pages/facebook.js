@@ -89,7 +89,7 @@ const Facebook = () => {
               {!loading && hasVideos && (
                 <div className="w-full lg:w-2/3 mx-auto text-center cursor-pointer leading-10">
                   <span
-                    className="text-white bg-indigo-600 rounded-md p-2 shadow-md shadow-indigo-500/50"
+                    className="text-white animate-pulse bg-indigo-600 rounded-md p-2 shadow-md shadow-indigo-500/50"
                     onClick={() => executeScroll()}
                   >
                     👇 Scrolldown And Download Videos 👇

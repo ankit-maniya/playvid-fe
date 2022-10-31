@@ -81,7 +81,7 @@ const Chingari = () => {
               {!loading && hasVideos && (
                 <div className="w-full lg:w-2/3 mx-auto text-center cursor-pointer leading-10">
                   <span
-                    className="text-white bg-indigo-600 rounded-md p-2 shadow-md shadow-indigo-500/50"
+                    className="text-white animate-pulse bg-indigo-600 rounded-md p-2 shadow-md shadow-indigo-500/50"
                     onClick={() => executeScroll()}
                   >
                     👇 Scrolldown And Download Videos 👇
@@ -121,7 +121,7 @@ const Chingari = () => {
                         <a
                           href={videoData.url}
                           rel="noopener noreferrer"
-                          // target="_blank"
+                          target="_blank"
                           className="flex flex-wrap content-between text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-slate-300 rounded-lg text-sm px-5 py-2.5 text-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-slate-800 items-center"
                         >
                           <div className="w-full">
@@ -155,7 +155,7 @@ const Chingari = () => {
                         <a
                           href={videoData.thumbnail}
                           rel="noopener noreferrer"
-                          // target="_blank"
+                          target="_blank"
                           className="flex flex-wrap content-between text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-slate-300 rounded-lg text-sm px-5 py-2.5 text-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-slate-800 items-center"
                         >
                           <div className="w-full">
