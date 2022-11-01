@@ -1,12 +1,19 @@
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
-const HeroInfo = ({ title }) => {
+const HeroInfo = ({ fulltitle, title }) => {
+  let displayTitle = "";
+  if (fulltitle) {
+    displayTitle = fulltitle;
+  } else {
+    displayTitle = `Download ${title ? title : "Anything"} Video`;
+  }
+
   return (
     <>
       <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-center break-all">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 via-pink-500 to-yellow-500">
-          Download {title} Video <br/> From Link!
+          {displayTitle} <br /> From Link!
         </span>
       </div>
 

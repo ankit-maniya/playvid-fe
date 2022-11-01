@@ -92,7 +92,7 @@ const Bandcamp = () => {
           <Navbar back={true} />
           <div className="flex h-full lg:h-vh-80 justify-center align-middle">
             <div className="my-24 lg:m-auto flex-auto">
-              <HeroInfo title="Bandcamp" />
+              <HeroInfo fulltitle="Download Bandcamp Audio" />
 
               <div className="p-5 pt-7 lg:p-10">
                 <SearchBar handleDownload={handleBtnDownload} />
