@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
+
 import { useRef, useState } from "react";
 import { toast } from "react-toastify";
 
@@ -13,7 +16,6 @@ import { isValidUrl } from "../global/helper";
 import VideoService from "../services/video.service";
 import { dummyImg } from "../global/utils";
 import { PhotoIcon, VideoCameraIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
 
 const Moj = () => {
   const videoListSectionRef = useRef(null);
@@ -66,6 +68,18 @@ const Moj = () => {
 
   return (
     <>
+      <Head>
+        <title>{videoData?.title || "Moj Video Downloader"}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:type" content="website" />
+        <meta name="description" content={videoData?.title} />
+        <meta name="keywords" content={videoData?.title} />
+
+        <meta property="og:title" content={videoData?.title} />
+        <meta property="og:url" content={videoData?.url} />
+        <meta property="og:description" content={videoData?.title} />
+        <meta property="og:image" content={videoData?.thumbnail} />
+      </Head>
       <ScrollToTop />
       {loading && <Loader />}
 

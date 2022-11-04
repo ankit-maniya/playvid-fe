@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 import HeroInfo from "../components/HeroInfo";
 import Navbar from "../components/Navbar";
 import Loader from "../components/Loader";
 import Plateforms from "../components/PlateformList";
 import { ScrollToTop } from "../components/ScrollToTop";
-import Head from "next/head";
 
 export default function Index() {
   const [loading, setLoading] = useState(true);
