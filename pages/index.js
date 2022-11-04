@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Loader from "../components/Loader";
 import Plateforms from "../components/PlateformList";
 import { ScrollToTop } from "../components/ScrollToTop";
+import Head from "next/head";
 
 export default function Index() {
   const [loading, setLoading] = useState(true);
@@ -16,27 +17,34 @@ export default function Index() {
   }, [loading]);
 
   return (
-    <div>
-      {loading && <Loader />}
-      <ScrollToTop />
+    <>
+      <Head>
+        <title>Playvid Video Downloader</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:type" content="website" />
+      </Head>
+      <div>
+        {loading && <Loader />}
+        <ScrollToTop />
 
-      <div className="h-screen">
         <div className="h-screen">
-          <Navbar />
-          <div
-            className="flex h-vh-80
+          <div className="h-screen">
+            <Navbar />
+            <div
+              className="flex h-vh-80
            justify-center align-middle"
-          >
-            <div className="m-auto flex-auto">
-              <HeroInfo title="Any" />
+            >
+              <div className="m-auto flex-auto">
+                <HeroInfo title="Any" />
 
-              <div className="p-2 pr-0 mt-10">
-                <Plateforms />
+                <div className="p-2 pr-0 mt-10">
+                  <Plateforms />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

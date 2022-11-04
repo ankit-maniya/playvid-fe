@@ -1,20 +1,16 @@
 /** @type {import('next').NextConfig} */
-const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
+const withPWA = require("next-pwa")({
+  dest: "public",
+  register: true,
+  skipWaiting: true,
+  runtimeCaching,
+  disable: process.env.NODE_ENV === "development",
+});;
 
-const nextConfig = {
-  reactStrictMode: true,
+module.exports = withPWA({
   swcMinify: true,
-  // compiler: {
-  //   removeConsole: process.env.NODE_ENV !== "development",
-  // },
-  pwa: {
-    dest: "public",
-    // disable: process.env.NODE_ENV === "development",
-    register: true,
-    runtimeCaching,
-    buildExcludes: [/middleware-manifest.json$/],
-  },
+  reactStrictMode: true,
   images: {
     domains: [
       "i.ytimg.com",
@@ -26,10 +22,4 @@ const nextConfig = {
       "media.chingari.io",
     ],
   },
-};
-
-module.exports = () => {
-  const plugins = [withPWA];
-  const config = plugins.reduce((acc, next) => next(acc), nextConfig);
-  return config;
-};
+});

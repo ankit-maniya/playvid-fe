@@ -14,6 +14,7 @@ import VideoService from "../services/video.service";
 import { dummyImg } from "../global/utils";
 import { PhotoIcon, VideoCameraIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Head from "next/head";
 
 const Chingari = () => {
   const videoListSectionRef = useRef(null);
@@ -65,6 +66,18 @@ const Chingari = () => {
 
   return (
     <>
+      <Head>
+        <title>{videoData?.title || "Chingari Video Downloader"}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:type" content="website" />
+        <meta name="description" content={videoData?.artist} />
+        <meta name="keywords" content={videoData?.title} />
+
+        <meta property="og:title" content={videoData?.title} />
+        <meta property="og:url" content={videoData?.thumbnail} />
+        <meta property="og:description" content={videoData?.title} />
+        <meta property="og:image" content={videoData?.thumbnail} />
+      </Head>
       <ScrollToTop />
       {loading && <Loader />}
 

@@ -1,1 +1,1 @@
-exports.apiUrl = "http://127.0.0.1:8000/";
+exports.apiUrl = "https://7793-103-251-19-200.in.ngrok.io/";

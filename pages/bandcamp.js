@@ -67,23 +67,19 @@ const Bandcamp = () => {
 
   return (
     <>
-      {videoData && (
-        <Head>
-          <title>{videoData.title}</title>
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
-          <meta property="og:type" content="website" />
-          <meta name="description" content={videoData.artist} />
-          <meta name="keywords" content={videoData.title} />
+      <Head>
+        <title>{videoData?.title || "BandCamp Video Downloader"}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:type" content="website" />
+        <meta name="description" content={videoData?.artist} />
+        <meta name="keywords" content={videoData?.title} />
 
-          <meta property="og:title" content={videoData.title} />
-          <meta property="og:url" content={videoData.thumbnail} />
-          <meta property="og:description" content={videoData.title} />
-          <meta property="og:image" content={videoData.thumbnail} />
-        </Head>
-      )}
+        <meta property="og:title" content={videoData?.title} />
+        <meta property="og:url" content={videoData?.thumbnail} />
+        <meta property="og:description" content={videoData?.title} />
+        <meta property="og:image" content={videoData?.thumbnail} />
+      </Head>
+
       <ScrollToTop />
       {loading && <Loader />}
 
