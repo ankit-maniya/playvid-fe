@@ -106,18 +106,20 @@ export default function Youtube() {
                 </div>
                 <div className="flex-col lg:flex lg:flex-row">
                   <div className="w-full lg:w-1/3">
-                    <Image
-                      layout={"responsive"}
-                      quality={90}
-                      width={1280}
-                      height={1920}
-                      title={`${videoData.title}`}
-                      src={`${
-                        videoData.thumbnail ? videoData.thumbnail : dummyImg
-                      }`}
-                      alt={`${videoData.title}`}
-                      priority
-                    />
+                    <div className="w-auto max-w-lg mx-auto">
+                      <Image
+                        layout={"responsive"}
+                        quality={90}
+                        width="100%"
+                        height="100%"
+                        title={`${videoData.title}`}
+                        src={`${
+                          videoData.thumbnail ? videoData.thumbnail : dummyImg
+                        }`}
+                        alt={`${videoData.title}`}
+                        priority
+                      />
+                    </div>
                   </div>
                   <div className="w-full mt-4 lg:mt-0 lg:w-2/3 lg:ml-2">
                     <VideoList data={videoData} />

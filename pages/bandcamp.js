@@ -112,16 +112,20 @@ const Bandcamp = () => {
         <div className="h-full lg:h-vh-70" ref={videoListSectionRef}>
           <div className="px-5 lg:px-20 lg:pb-5 ">
             <div className=" py-8 px-8 m-1 bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-              <Image
-                layout={"responsive"}
-                quality={90}
-                width={100}
-                height={100}
-                title={`${videoData.title}`}
-                className="block mx-auto h-24 rounded-md sm:mx-0 sm:shrink-0 "
-                src={`${videoData.thumbnail ? videoData.thumbnail : dummyImg}`}
-                alt={`${videoData.title}`}
-              />
+              <div className="w-32 block mx-auto sm:mx-0 sm:shrink-0 ">
+                <Image
+                  layout={"responsive"}
+                  quality={90}
+                  width={"100%"}
+                  height={"100%"}
+                  title={`${videoData.title}`}
+                  className=" rounded-md "
+                  src={`${
+                    videoData.thumbnail ? videoData.thumbnail : dummyImg
+                  }`}
+                  alt={`${videoData.title}`}
+                />
+              </div>
 
               <div className="text-center space-y-2 sm:text-left">
                 <div className="space-y-0.5">

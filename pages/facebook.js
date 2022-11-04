@@ -24,7 +24,7 @@ const Facebook = () => {
     videoListSectionRef.current.scrollIntoView({ behavior: "smooth" });
 
   const handleBtnDownload = async (search) => {
-    let domain = "facebook";
+    let domain = ["facebook", "fb.watch"];
     if (!isValidUrl(search, domain)) {
       toast.error(`Please provide ${domain} link📎!`);
       return;
@@ -111,17 +111,19 @@ const Facebook = () => {
                 </div>
                 <div className="flex-col lg:flex lg:flex-row">
                   <div className="w-full lg:w-1/3">
-                    <Image
-                      layout={"responsive"}
-                      quality={90}
-                      width={1280}
-                      height={1920}
-                      title={`${videoData.title}`}
-                      src={`${
-                        videoData.thumbnail ? videoData.thumbnail : dummyImg
-                      }`}
-                      alt={`${videoData.title}`}
-                    />
+                    <div className="w-auto max-w-lg mx-auto">
+                      <Image
+                        layout={"responsive"}
+                        quality={90}
+                        width="100%"
+                        height="100%"
+                        title={`${videoData.title}`}
+                        src={`${
+                          videoData.thumbnail ? videoData.thumbnail : dummyImg
+                        }`}
+                        alt={`${videoData.title}`}
+                      />
+                    </div>
                   </div>
                   <div className="w-full mt-4 lg:mt-0 lg:w-2/3 lg:ml-2">
                     {/* <VideoList data={videoData} /> */}
