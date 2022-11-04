@@ -7,7 +7,10 @@ const withPWA = require("next-pwa")({
   register: true,
   skipWaiting: true,
   runtimeCaching,
-  disable: process.env.NODE_ENV === "development",
+  disable: false,
+  fallbacks: {
+    document: '/_offline',  // if you want to fallback to a custom page other than /_offline
+  }
 });
 
 module.exports = withPWA({

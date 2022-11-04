@@ -1,8 +1,4 @@
-import {
-  ArrowSmallUpIcon,
-  ArrowUpCircleIcon,
-  ArrowUpIcon,
-} from "@heroicons/react/24/outline";
+import { ArrowSmallUpIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
 import { classNames } from "../../global/helper";
 
