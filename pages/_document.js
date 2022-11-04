@@ -9,6 +9,7 @@ class MyDocument extends Document {
 
           <link rel="manifest" href="./manifest.json" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
+          <meta name="description" content="Playvid Video Downloader" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
         <body>

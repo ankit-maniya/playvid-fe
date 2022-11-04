@@ -33,6 +33,7 @@ const SearchBar = ({ handleDownload }) => {
       </div>
       <div className="mt-1 sm:mt-2 relative w-full lg:w-2/3 mx-auto">
         <button
+          id="download"
           name="download"
           type="button"
           onClick={() => {
@@ -43,6 +44,7 @@ const SearchBar = ({ handleDownload }) => {
           Download
         </button>
         <button
+          id="clear"
           type="button"
           name="clear"
           onClick={() => setSearch("")}

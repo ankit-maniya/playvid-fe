@@ -21,6 +21,7 @@ export default function Index() {
       <Head>
         <title>Playvid Video Downloader</title>
         <meta property="og:type" content="website" />
+        <meta name="description" content="Playvid Video Downloader" />
       </Head>
       <div>
         {loading && <Loader />}
