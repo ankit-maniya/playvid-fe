@@ -96,11 +96,10 @@ const Navbar = ({ back }) => {
           </div>
           <div className="absolute inset-y-0 right-0 items-center inline-flex">
             {back && (
-              <Link
-                href="/"
-                className="rounded-full bg-white p-3 text-black font-bold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-              >
-                Back
+              <Link href="/">
+                <a className="rounded-full bg-white p-3 text-black font-bold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                  Back
+                </a>
               </Link>
             )}
           </div>

@@ -55,16 +55,18 @@ const Plateforms = () => {
                 >
                   <a className="text-slate-900 bg-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-slate-300 rounded-lg px-5 py-2.5 text-center mr-2 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700 dark:focus:ring-slate-800 items-center">
                     <span className="font-medium flex justify-center align-middle">
-                      <Image
-                        layout={"responsive"}
-                        quality={50}
-                        width={1280}
-                        height={1920}
-                        title={`${plateform.alt}`}
-                        src={imageUrl}
-                        alt={`${plateform.alt}`}
-                        loading="lazy"
-                      />
+                      <div className="w-32">
+                        <Image
+                          layout={"responsive"}
+                          quality={50}
+                          width="100%"
+                          height="100%"
+                          title={`${plateform.alt}`}
+                          src={imageUrl}
+                          alt={`${plateform.alt}`}
+                          loading="lazy"
+                        />
+                      </div>
                     </span>
                     <span className=" font-bold break-all text-sm md:text-md lg:text-lg">
                       {plateform.title}
@@ -108,27 +110,29 @@ const Plateforms = () => {
                     key={idx}
                     className="relative text-slate-900 bg-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-slate-300 rounded-lg px-5 py-2.5 text-center mr-2 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700 dark:focus:ring-slate-800 items-center"
                   >
+                    <span className="font-medium flex justify-center align-middle">
+                      <div className="w-32">
+                        <Image
+                          layout={"responsive"}
+                          quality={50}
+                          width="100%"
+                          height="100%"
+                          title={`${plateform.alt}`}
+                          src={imageUrl}
+                          alt={`${plateform.alt}`}
+                          loading="lazy"
+                        />
+                      </div>
+                    </span>
+                    <span className=" font-bold break-all text-sm md:text-md lg:text-lg">
+                      {plateform.title}
+                    </span>
                     <div className="absolute top-0 right-0 bottom-0 left-0 bg-black opacity-70"></div>
                     <div className="select-none absolute top-0 right-0 bottom-0 left-0 m-auto flex justify-center align-middle h-full">
                       <label className="text-lg text-white font-bold break-words self-center ">
                         COMMING SOON
                       </label>
                     </div>
-                    <span className="font-medium flex justify-center align-middle">
-                      <Image
-                        layout={"responsive"}
-                        quality={80}
-                        width={1280}
-                        height={1920}
-                        title={`${plateform.alt}`}
-                        src={imageUrl}
-                        alt={`${plateform.alt}`}
-                        loading="lazy"
-                      />
-                    </span>
-                    <span className=" font-bold break-all text-sm md:text-md lg:text-lg">
-                      {plateform.title}
-                    </span>
                   </div>
                 );
               }
@@ -144,16 +148,18 @@ const Plateforms = () => {
                     className="text-slate-900 bg-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-slate-300 rounded-lg px-5 py-2.5 text-center mr-2 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700 dark:focus:ring-slate-800 items-center"
                   >
                     <span className="font-medium flex justify-center align-middle">
-                      <Image
-                        layout={"responsive"}
-                        quality={80}
-                        width={1280}
-                        height={1920}
-                        title={`${plateform.alt}`}
-                        src={imageUrl}
-                        alt={`${plateform.alt}`}
-                        loading="lazy"
-                      />
+                      <div className="w-32">
+                        <Image
+                          layout={"responsive"}
+                          quality={50}
+                          width="100%"
+                          height="100%"
+                          title={`${plateform.alt}`}
+                          src={imageUrl}
+                          alt={`${plateform.alt}`}
+                          loading="lazy"
+                        />
+                      </div>
                     </span>
                     <span className=" font-bold break-all text-sm md:text-md lg:text-lg">
                       {plateform.title}

@@ -26,7 +26,8 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-.env*.local
+.env*
+.local
 
 # vercel
 .vercel
@@ -36,6 +37,9 @@ yarn-error.log*
 next-env.d.ts
 
 # pwa
-**/public/workbox-*.js
 **/public/sw.js
+**/public/workbox-*.js
 **/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map

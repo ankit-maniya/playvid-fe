@@ -20,7 +20,6 @@ export default function Index() {
     <>
       <Head>
         <title>Playvid Video Downloader</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:type" content="website" />
       </Head>
       <div>

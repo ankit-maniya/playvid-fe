@@ -4,7 +4,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Playvid Video Downloader</title>
+          {/* <title>Playvid Video Downloader</title> */}
           <meta charSet="utf-8" />
 
           <link rel="manifest" href="./manifest.json" />
