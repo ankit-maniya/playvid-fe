@@ -33,6 +33,7 @@ export const ScrollToTop = () => {
     <div className="fixed bottom-4 right-4 lg:bottom-10 lg:right-10 z-50">
       <button
         type="button"
+        name="scrollToTop"
         onClick={scrollToTop}
         className={classNames(
           isVisible ? 'opacity-100' : 'opacity-0',

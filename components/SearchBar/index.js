@@ -19,6 +19,7 @@ const SearchBar = ({ handleDownload }) => {
             setSearch(target.value);
           }}
           type="search"
+          name="search"
           id="default-search"
           className="block text-white p-5 pl-10 pr-2 w-full bg-transparent border border-b-yellow-400  border-t-pink-400 border-l-indigo-400 border-r-orange-400 rounded-full focus:none focus:outline-none focus:border-b-yellow-700  focus:border-t-pink-700 focus:border-l-indigo-700 focus:border-r-orange-700"
           placeholder="Paste Link Hear!"
@@ -32,6 +33,7 @@ const SearchBar = ({ handleDownload }) => {
       </div>
       <div className="mt-1 sm:mt-2 relative w-full lg:w-2/3 mx-auto">
         <button
+          name="download"
           type="button"
           onClick={() => {
             handleDownload(search);
@@ -42,6 +44,7 @@ const SearchBar = ({ handleDownload }) => {
         </button>
         <button
           type="button"
+          name="clear"
           onClick={() => setSearch("")}
           className=" bg-gradient-to-r hover:bg-gradient-to-l from-violet-500 via-pink-500 to-yellow-500 font-medium rounded-full  focus:none focus:outline-none text-white text-lg p-3 px-5 sm:ml-0 lg:ml-2 drop-shadow-md "
         >
