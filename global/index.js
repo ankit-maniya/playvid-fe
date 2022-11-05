@@ -1,3 +1,3 @@
 const { API_URI } = process.env;
 
-exports.apiUrl = API_URI || "http://localhost:8000/";
+exports.apiUrl = API_URI || "https://playvid-be.herokuapp.com/";
