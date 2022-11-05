@@ -1,1 +1,3 @@
-exports.apiUrl = "https://7793-103-251-19-200.in.ngrok.io/";
+const { API_URI } = process.env;
+
+exports.apiUrl = API_URI || "http://localhost:8000/";
