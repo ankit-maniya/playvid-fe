@@ -3172,6 +3172,7 @@ export const platformLists = [
     title: "Soundcloud",
     alt: "Soundcloud video downloader",
     visitId: "soundcloud",
+    isActive: true,
   },
   {
     imgext: ".svg",

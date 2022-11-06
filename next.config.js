@@ -23,6 +23,7 @@ module.exports = withPWA({
       "scontent.fstv5-1.fna.fbcdn.net",
       "cdn2.sharechat.com",
       "media.chingari.io",
+      "i1.sndcdn.com",
     ],
   },
 });

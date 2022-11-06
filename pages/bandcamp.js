@@ -99,7 +99,7 @@ const Bandcamp = () => {
                     className="text-white animate-pulse bg-indigo-600 rounded-md p-2 shadow-md shadow-indigo-500/50"
                     onClick={() => executeScroll()}
                   >
-                    👇 Scrolldown And Download Videos 👇
+                    👇 Scrolldown And Download Audio 👇
                   </span>
                 </div>
               )}
