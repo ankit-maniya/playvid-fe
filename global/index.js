@@ -1,3 +1,3 @@
 const { API_URI } = process.env;
 
-exports.apiUrl = API_URI || "https://ankitmaniya.pythonanywhere.com/api/music/";
+exports.apiUrl = "https://playvid-be.onrender.com/api/music/";
