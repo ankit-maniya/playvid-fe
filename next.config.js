@@ -24,6 +24,7 @@ module.exports = withPWA({
       "cdn2.sharechat.com",
       "media.chingari.io",
       "i1.sndcdn.com",
+      "lh3.googleusercontent.com"
     ],
   },
 });
