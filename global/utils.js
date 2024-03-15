@@ -3233,6 +3233,5 @@ export const platformLists = [
     title: "YouTube",
     alt: "YouTube video downloader",
     visitId: "youtube",
-    isActive: true,
   },
 ];
